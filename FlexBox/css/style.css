@@ -1,0 +1,102 @@
+/* https://www.w3schools.com/cssreF/css3_pr_box-sizing.asp */
+/* Padding i border su ukljuceni u visinu i sirinu elementa */
+/* Bitno za flexbox */
+* {
+  box-sizing: border-box;
+}
+
+/* Body inicijalno ima neku marginu koju najcesce ne zelimo */
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  /* https://www.w3schools.com/cssref/css_units.asp */
+  /* Ovo je poseban unit koji nam oznacava visinu pogleda (viewporta) */
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  display: flex;
+}
+
+.header > .logo {
+  margin: 20px;
+  background: cornflowerblue;
+  border: 2px solid #fff;
+  flex: 0 0 100px;
+  height: 100px;
+}
+
+.header > .header-title {
+  flex-grow: 1;
+}
+
+.header > .header-title > h1 {
+  line-height: 100px;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side > a {
+  text-decoration: none;
+}
+
+.side > a > div {
+  background-color: pink;
+  color: #333;
+  margin: 10px;
+  padding: 10px;
+
+  /* https://www.w3schools.com/css/css3_transitions.asp */
+  /* Animacije u css-u. Pomenucemo na iducem casu */
+  transition: all .3s;
+}
+
+.side > a > div:hover {
+  padding-left: 20%;
+}
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main > .main-item {
+  /* Alternativa za flex-hrow, flex-shrink, flex-basis */
+  /* flex: 0 0 30%; */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 30%;
+  background: coral;
+  padding: 40px 0;
+  margin: 10px;
+  text-align: center;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
