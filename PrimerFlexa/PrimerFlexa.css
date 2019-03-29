@@ -1,0 +1,101 @@
+.flex-container {
+    display: flex;
+    background-color: bisque;
+    flex-direction: column;
+}
+.flex-container > .prvi-container {
+    display: flex;
+    height: 90px;
+    background-color: black;
+    justify-content: center;
+}
+.prvi-container > div {
+    background-color: aliceblue;
+    width: 110px;
+    height: 30px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.flex-container > .drugi-container {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    background-color: #ccc;
+    justify-content: center;
+}
+.drugi-container > div {
+    margin: 10px;
+    padding: 10px;
+}
+.flex-container > .treci-container {
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    background-color: #fff;
+    justify-content: center;
+}
+.treci-container > div {
+    margin: 10px;
+    padding: 10px;
+}
+.treci-container > .glavni-deo {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: antiquewhite;
+}
+.glavni-deo > div > h3 {
+    color: #fff; 
+    background-color: #f00;
+}
+.glavni-deo > div > h4 {
+    color: #f00; 
+}
+.glavni-deo > div > a:link {
+    color: #f00;
+    text-decoration: none;
+}
+
+.treci-container > .obavestenja {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+.treci-container > .desna-traka {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: flex-start;
+}
+.treci-container > .desna-traka > div {
+    margin: 10px;
+    padding: 10px;
+}
+.desna-traka > .webmail{
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+}
+.webmail > .PoincareAlas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.PoincareAlas > div > a:link {
+    color: #f00;
+    text-decoration: none;
+}
+.desna-traka > .trazi {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+}
+.desna-traka > div > a:link {
+    color: #f00;
+    text-decoration: none;
+}
+.trazi > div {
+    margin: 5px;
+}
